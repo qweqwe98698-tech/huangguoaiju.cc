@@ -1,0 +1,39 @@
+# ==============================================================================
+# 黄果短剧 (huangguoaiju.cc) 搜索引擎与生成式 AI 抓取规范
+# ==============================================================================
+
+# 1. 主流国际与国内搜索引擎爬虫
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: yisouspider
+Allow: /
+
+# 2. 生成式 AI 与大模型搜索爬虫
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# 3. 全局通用规则
+User-agent: *
+Allow: /
+
+# 4. 正式 Sitemap 声明 (统一主域名裸域规范)
+Sitemap: https://huangguoaiju.cc/sitemap.xml
